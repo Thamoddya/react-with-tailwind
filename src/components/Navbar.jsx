@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="text-black bg-white flex justify-between items-center h-[10vh]    max-w-[1240px] mx-auto px-4 ">
+    <div className="text-black bg-white flex justify-between items-center h-[10vh] max-w-[1240px] mx-auto px-4 ">
       <p className="w-full text-3xl font-[900] md:font-bold  text-gray-600 ">
         taskbear.
       </p>
