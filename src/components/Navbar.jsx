@@ -9,8 +9,10 @@ const Navbar = () => {
   };
 
   return (
-    <div className="text-white flex justify-between items-center h-24  max-w-[1240px] mx-auto px-4 ">
-      <h1 className="w-full text-3xl font-bold text-[#00df9a]">REACT</h1>
+    <div className="text-black bg-white flex justify-between items-center h-[10vh]    max-w-[1240px] mx-auto px-4 ">
+      <p className="w-full text-3xl font-[900] md:font-bold  text-gray-600 ">
+        taskbear.
+      </p>
       <ul className="hidden md:flex">
         <li className="p-4">Home</li>
         <li className="p-4">Company</li>
@@ -19,7 +21,7 @@ const Navbar = () => {
         <li className="p-4">Contact</li>
       </ul>
 
-      <div onClick={handleNav} className="block md:hidden">
+      {/* <div onClick={handleNav} className="block md:hidden">
         {!nav ? (
           <AiOutlineClose size={20} className="cursor-pointer" />
         ) : (
@@ -41,7 +43,7 @@ const Navbar = () => {
           <li className="p-4 border-b border-gray-600">About</li>
           <li className="p-4">Contact</li>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 };

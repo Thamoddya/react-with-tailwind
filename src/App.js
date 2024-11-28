@@ -1,12 +1,16 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import Analytics from "./components/Analytics";
+import Main from "./components/Main";
 
 function App() {
   return (
     <div>
       <Navbar />
-      <Hero />
+      {/* <Analytics /> */}
+      <Main />
+      {/* <Hero /> */}
     </div>
   );
 }
