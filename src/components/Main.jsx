@@ -1,5 +1,5 @@
-import React from "react";
-import { BsArrowRight } from "react-icons/bs";
+import React from 'react';
+import { BsArrowRight } from 'react-icons/bs';
 
 const Main = () => {
   return (
@@ -16,7 +16,7 @@ const Main = () => {
           you.
         </p>
         <button className="self-start bg-white text-black px-4 py-3 mt-4 rounded-sm">
-          Find a handyman near me 
+          Find a handyman near me
           <BsArrowRight size={20} className="inline-block ml-2" />
         </button>
       </div>

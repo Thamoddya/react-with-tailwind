@@ -1,18 +1,19 @@
-import React from "react";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Analytics from "./components/Analytics";
-import Main from "./components/Main";
+import React from 'react';
 
-function App() {
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import MainLayout from './layouts/MainLayout';
+import LandingPage from './Pages/LandingPage';
+
+const App = () => {
   return (
-    <div>
-      <Navbar />
-      {/* <Analytics /> */}
-      <Main />
-      {/* <Hero /> */}
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<LandingPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

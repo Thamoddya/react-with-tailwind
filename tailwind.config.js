@@ -6,6 +6,9 @@ module.exports = {
       backgroundImage: {
         section: "url('/src/assets/images/section.png')",
       },
+      fontFamily: {
+        sans: ['"SF Pro Display"', 'sans-serif'], 
+      },
     },
   },
   plugins: [],

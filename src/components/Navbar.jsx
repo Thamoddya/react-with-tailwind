@@ -1,50 +1,66 @@
-import React, { useState } from "react";
-
-import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import React from 'react';
+import logo from '../assets/images/taskbear.svg';
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false);
-  const handleNav = () => {
-    setNav(!nav);
-  };
-
   return (
-    <div className="text-black bg-white flex justify-between items-center h-[10vh] max-w-[1240px] mx-auto px-4 ">
-      <p className="w-full text-3xl font-[900] md:font-bold  text-gray-600 ">
-        taskbear.
-      </p>
-      <ul className="hidden md:flex">
-        <li className="p-4">Home</li>
-        <li className="p-4">Company</li>
-        <li className="p-4">Resources</li>
-        <li className="p-4">About</li>
-        <li className="p-4">Contact</li>
-      </ul>
-
-      {/* <div onClick={handleNav} className="block md:hidden">
-        {!nav ? (
-          <AiOutlineClose size={20} className="cursor-pointer" />
-        ) : (
-          <AiOutlineMenu size={20} className="cursor-pointer" />
-        )}
-      </div>
-      <div
-        className={
-          !nav
-            ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-800 bg-[#000300] ease-in-out duration-500 md:hidden "
-            : "fixed left-[-100%]"
-        }
-      >
-        <h1 className="w-full text-3xl font-bold text-[#00df9a] m-4">REACT</h1>
-        <ul className="uppercase p-4">
-          <li className="p-4 border-b border-gray-600">Home</li>
-          <li className="p-4 border-b border-gray-600">Company</li>
-          <li className="p-4 border-b border-gray-600">Resources</li>
-          <li className="p-4 border-b border-gray-600">About</li>
-          <li className="p-4">Contact</li>
-        </ul>
-      </div> */}
-    </div>
+    <>
+      <nav class="bg-white border-gray-200 dark:bg-white">
+        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+          <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src={logo} class="h-6" alt="Taskbear" />
+            {/* <span class="self-center text-2xl whitespace-nowrap dark:text-black font-bold">
+              taskbear.
+            </span> */}
+          </a>
+          <div class="flex items-center space-x-6 rtl:space-x-reverse">
+            <button className="bg-green-700 px-5 py-2 rounded-sm text-white font-medium">
+              Post a job
+            </button>
+          </div>
+        </div>
+      </nav>
+      <nav class="bg-gray-50 dark:bg-[#404145]">
+        <div class="max-w-screen-xl px-4 py-3 mx-auto">
+          <div class="flex items-center">
+            <ul class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-2 text-sm overflow-x-auto">
+              <li>
+                <a
+                  href="/"
+                  class="text-gray-900 dark:text-white hover:underline"
+                  aria-current="page"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/"
+                  class="text-gray-900 dark:text-white hover:underline"
+                >
+                  Ads Center
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/"
+                  class="text-gray-900 dark:text-white hover:underline"
+                >
+                  Jobs
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/"
+                  class="text-gray-900 dark:text-white hover:underline"
+                >
+                  How it works
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </>
   );
 };
 
